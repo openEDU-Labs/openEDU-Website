@@ -1,0 +1,97 @@
+html, body 
+{
+    background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+#title_text 
+{
+	margin-top: 85px;
+	text-align: center;
+	font-size: 146px;
+	text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+	color: #ffffff;
+}
+#nav_container
+{
+	position: absolute;
+	width: 300px;
+	height: 255px;
+	left: 0;right: 0;
+	top: 300px;
+	margin: auto;
+}
+.nav_button
+{
+	position: relative;
+	width: 300px;
+	height: 75px;
+	margin-bottom: 10px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.student_color
+{
+	background: #ff7b00;
+}
+.teacher_color
+{
+	background: #0090ff;
+}
+.login_menu
+{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	left: 0;right: 0;
+	top: 0;bottom: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	border-radius: 10px;
+	border: none;
+}
+.login_title
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+input
+{
+	left: 0;right: 0;
+	margin: auto;
+	display: block;
+	height: 40px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	font-size: 18px;
+	color: #707070;
+}
+.login_button
+{
+	width: 100px;
+	background: #bcbcba;
+	color: #ffffff;
+	cursor: pointer;
+}
+.login_input
+{
+	padding-left: 5px;
+}
+.register
+{
+	cursor: pointer;
+}
