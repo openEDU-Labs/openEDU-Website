@@ -1,28 +1,117 @@
 <html>
 <head>
-	<title>OpenEDU - Teacher</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>OpenEDU - Teacher</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
-
+    
 <style>
-	html,body
-	{
-		background: url(css/images/bg_alt.png);
-	}
+    html, body
+    {
+        background: url(css/images/bg_alt.png);
+        background-attachment: fixed;
+    }
 </style>
-
+    
 <body>
-
-	<div class="login_menu teacher_color">
-		<p class="login_title">Teacher Login</p>
-		<form>
-			<input class="login_input" name="username" type="text" placeholder="Username">
-			<input class="login_input" name="user_pass" type="text" placeholder="Password">
-			<input class="login_button" name="submit" type="submit" value="Log In">
-		</form>
-		<p class="register">Register</p>
-	</div>
-
+    <div class="nav_bar">
+        <div class="nav_menu">
+            <p class="nav_menu_item">My Classes</p>
+            <p class="nav_menu_item">Create Class</p>
+        </div>
+        <p class="nav_username">Username</p>
+        <p class="nav_logout">Log Out</p>
+    </div>
+    
+    <div class="class_container">
+        
+        <a href="teacher_videos.html">
+        <div class="class_icon class_icon_teacher">
+            
+            <p class="class_title">Chemistry</p>
+            <div class="class_icon_info">
+                
+                <div class="class_icon_info_container">      
+                    <p>Videos:</p>
+                    <p>Students:</p>
+                    <p>Class Avg:</p>
+                </div>
+                
+                <div class="class_icon_data_container">
+                    <p>15</p>
+                    <p>30</p>
+                    <p>81%</p>
+                </div>
+    
+            </div>
+            
+        </div>
+        </a>
+        
+        <div class="class_icon class_icon_teacher">
+            
+            <p class="class_title">Physics</p>
+            <div class="class_icon_info">
+                
+                <div class="class_icon_info_container">      
+                    <p>Videos:</p>
+                    <p>Students:</p>
+                    <p>Class Avg:</p>
+                </div>
+                
+                <div class="class_icon_data_container">
+                    <p>10</p>
+                    <p>22</p>
+                    <p>87%</p>
+                </div>
+    
+            </div>
+            
+        </div>
+        
+        <div class="class_icon class_icon_teacher">
+            
+            <p class="class_title">Calculus 1</p>
+            <div class="class_icon_info">
+                
+                <div class="class_icon_info_container">      
+                    <p>Videos:</p>
+                    <p>Students:</p>
+                    <p>Class Avg:</p>
+                </div>
+                
+                <div class="class_icon_data_container">
+                    <p>17</p>
+                    <p>21</p>
+                    <p>75%</p>
+                </div>
+    
+            </div>
+            
+        </div>
+            
+        <div class="class_icon class_icon_teacher">
+            
+            <p class="class_title">Calculus 2</p>
+            <div class="class_icon_info">
+                
+                <div class="class_icon_info_container">      
+                    <p>Videos:</p>
+                    <p>Students:</p>
+                    <p>Class Avg:</p>
+                </div>
+                
+                <div class="class_icon_data_container">
+                    <p>31</p>
+                    <p>19</p>
+                    <p>90%</p>
+                </div>
+    
+            </div>
+            
+        </div>
+        
+    </div>
+    
 </body>
 </html>
