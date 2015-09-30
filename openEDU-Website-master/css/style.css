@@ -1,0 +1,212 @@
+html, body 
+{
+    background: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+a
+{
+    color: #ffffff;
+}
+#title_text 
+{
+	margin-top: 85px;
+	text-align: center;
+	font-size: 146px;
+	text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+	color: #ffffff;
+}
+#nav_container
+{
+	position: absolute;
+	width: 300px;
+	height: 255px;
+	left: 0;right: 0;
+	top: 300px;
+	margin: auto;
+}
+.nav_button
+{
+	position: relative;
+	width: 300px;
+	height: 75px;
+	margin-bottom: 10px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.student_color
+{
+	background: rgba(246, 113, 44, 0.7);
+}
+.teacher_color
+{
+	background: rgba(22, 44, 215, 0.7);
+}
+.login_menu
+{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	left: 0;right: 0;
+	top: 0;bottom: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 22px;
+	color: #ffffff;
+	border-radius: 10px;
+	border: none;
+}
+.login_title
+{
+	font-size: 36px;
+	font-weight: bold;
+}
+input
+{
+	left: 0;right: 0;
+	margin: auto;
+	display: block;
+	height: 40px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	font-size: 18px;
+	color: #707070;
+}
+.login_button
+{
+	width: 100px;
+	background: #bcbcba;
+	color: #ffffff;
+	cursor: pointer;
+}
+.login_button1
+{
+    width: 112px;
+    background: #bcbcba;
+    color: #ffffff;
+    cursor: pointer;
+}
+.login_input
+{
+	padding-left: 5px;
+}
+.register
+{
+	cursor: pointer;
+}
+
+.nav_bar 
+{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    background: #666666;
+    color: #ffffff;
+    font-size: 20px;
+}
+.nav_menu
+{
+    position: absolute;
+    top: 7.5px;
+    left: 30px;
+}
+.nav_menu_item
+{
+    margin-right: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    float: left;
+}
+.nav_username
+{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    font-weight: 200;
+}
+.nav_logout
+{
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.class_container
+{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 1050px;
+    height: auto;
+}
+.class_icon
+{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.class_icon_teacher:nth-child(odd)
+{
+    background: rgba(22, 44, 215, 0.7);
+}
+.class_icon_teacher:nth-child(even)
+{
+    background: rgba(22, 44, 215, 0.8);
+}
+.class_icon_student:nth-child(odd)
+{
+    background: rgba(246, 113, 44, 0.7);
+}
+.class_icon_student:nth-child(even)
+{
+    background: rgba(246, 113, 44, 0.8);
+}
+.class_title
+{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.class_icon_info
+{
+    position: absolute;
+    left: 30px;
+    font-size: 22px;
+    width: 160px;
+    height: 160px;
+}
+.class_icon_info_container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 200;
+}
+.class_icon_data_container
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
