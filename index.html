@@ -3,19 +3,21 @@
 	<title>OpenEDU</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <style> html, body { background: #545454; } </style>
 </head>
 <body>
 	
 	<p id="title_text">OpenEDU</p>
+    <p id="subtitle_text">A simpler, smarter approach to online learning.</p>
 	
-	<div id="nav_container">
-		<a href="student_login.html"><div class="nav_button student_color">
-			<p>Students</p>
-		</div></a>
-		<a href="teacher_login.html"><div class="nav_button teacher_color">
-			<p>Teachers</p>
-		</div></a>
-	</div>	
+	<div class="login_menu">
+		<form>
+			<input class="login_input" name="username" type="text" placeholder="Username">
+			<input class="login_input" name="user_pass" type="text" placeholder="Password">
+			<input class="login_button" name="submit" type="submit" value="Log In">
+		</form>
+        <a href="registration.html"><p>Register</p></a>
+	</div>
 
 </body>
 </html>
