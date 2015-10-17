@@ -17,3 +17,5 @@
 
 # local setup
 Homework
+*.swp
+*.js~
