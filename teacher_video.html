@@ -2,13 +2,30 @@
 <head>
     <title>Teacher - Video Name</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300'         rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='video-js/videojs-openEDU/videojs-openEDU.css' rel='stylesheet'>
+    <link href='video-js/video-js-dist-5.0.0/video-js.css' rel='stylesheet'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='video-js/video-js-dist-5.0.0/video.js'></script> 
     <style> html, body { background: #545454; } </style>
 </head>
     
 <body>
     <a class="video_return_button" href="student_videos.html">Videos</a>
     <p class="video_title">Periodic Table</p>
-    <div class="video_box"></div>
+    <div class="video_box">
+      <video id="video" class="video-js vjs-default-skin"  controls
+             poster="http://video-js.zencoder.com/oceans-clip.png">
+        <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+      </video>
+    </div>
+  <script src="video-js/videojs-openEDU/videojs-openEDU.js"></script>
+  <script>
+    // fire up the plugin
+    var video = videojs('video');
+    video.openEDU('{"breakpoints":[{"breakpoint":1,"fields":[{"tag":"form","attr":{"id":"form"},"content":[{"tag":"h1","attr":"","content":"Breakpoint 1 Title"},{"tag":"p","attr":"","content":"Description Description Description"},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id1"},"content":""},{"tag":"label","attr":{"for":"id1"},"content":"example 1 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id2"},"content":"example answer 1"},{"tag":"label","attr":{"for":"id2"},"content":"example 2 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id3"},"content":"example answer 2"},{"tag":"label","attr":{"for":"id3"},"content":"example 3 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"submit","value":"Submit and Continue"},"content":""}]}]}]},{"breakpoint":4,"fields":[{"tag":"form","attr":{"id":"form"},"content":[{"tag":"h1","attr":"","content":"Breakpoint 2 Title"},{"tag":"p","attr":"","content":"Description Description Description"},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id1"},"content":""},{"tag":"label","attr":{"for":"id1"},"content":"example 1 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id2"},"content":"example answer 1"},{"tag":"label","attr":{"for":"id2"},"content":"example 2 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"radio","name":"question","id":"id3"},"content":"example answer 2"},{"tag":"label","attr":{"for":"id3"},"content":"example 3 description"}]},{"tag":"div","attr":"","content":[{"tag":"input","attr":{"type":"submit","value":"Submit and Continue"},"content":""}]}]}]},{"breakpoint":8,"fields":[{"tag":"form","attr":"","content":[{"tag":"h1","attr":"","content":"Breakpoint 2 Title"},{"tag":"p","attr":"","content":"Description Description Description"},{"tag":"input","attr":{"type":"text","name":"example field","value":"example"},"content":""},{"tag":"input","attr":{"type":"submit","value":"Submit"},"content":""}]}]}]}');
+  </script>
 </body>
 </html>
