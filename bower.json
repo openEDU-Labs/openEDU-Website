@@ -1,0 +1,26 @@
+{
+  "name": "openEDU-Website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/openEDU-Labs/openEDU-Website",
+  "authors": [
+    "Richard Wendel"
+  ],
+  "description": "Website for openEDU",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "video.js": "~5.0.0",
+    "videojs-marker": "videojs-markers#~0.5.0",
+    "videojs-openEDU": "https://github.com/openEDU-Labs/videojs-openEDU.git"
+  }
+}
