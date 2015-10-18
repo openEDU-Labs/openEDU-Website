@@ -15,12 +15,10 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "test"
   ],
   "dependencies": {
-    "video.js": "~5.0.0",
     "videojs-marker": "videojs-markers#~0.5.0",
-    "videojs-openEDU": "https://github.com/openEDU-Labs/videojs-openEDU.git"
+    "videojs-openedu": "videojs-openedu#~0.1.2"
   }
 }
