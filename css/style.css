@@ -4,11 +4,6 @@ html, body
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-
-=======
-a
->>>>>>> c6755898c8cf2b49e82d858cf26aa20d12f09366
 {
     color: #ffffff;
     text-decoration: none;
@@ -21,7 +16,6 @@ a
     font-weight: 300;
 	color: #ffffff;
 }
-<<<<<<< HEAD
 #about_title_text 
 {
     margin-top: 10px;
@@ -30,8 +24,6 @@ a
     font-weight: 300;
     color: #ffffff;
 }
-=======
->>>>>>> c6755898c8cf2b49e82d858cf26aa20d12f09366
 #subtitle_text
 {
     margin-top: -125px;
@@ -40,7 +32,6 @@ a
     font-weight: 200;
     color: #ffffff;
 }
-<<<<<<< HEAD
 #person_text
 {
     margin-top: -30px;
@@ -59,9 +50,6 @@ a
     font-weight: 200;
     color: #ffffff;
 }
-=======
-
->>>>>>> c6755898c8cf2b49e82d858cf26aa20d12f09366
 .login_menu
 {
     background: rgb(246, 113, 44);
@@ -76,7 +64,6 @@ a
 	color: #ffffff;
 	border: none;
 }
-<<<<<<< HEAD
 .about_nick
 {
     background: rgb(246, 113, 44);
@@ -161,8 +148,6 @@ a
     color: #ffffff;
     border: none;
 }
-=======
->>>>>>> c6755898c8cf2b49e82d858cf26aa20d12f09366
 .register_menu
 {
     background: rgb(246, 113, 44);
