@@ -4,7 +4,6 @@ html, body
     margin: 0;
     padding: 0;
 }
-a
 {
     color: #ffffff;
     text-decoration: none;
@@ -17,6 +16,14 @@ a
     font-weight: 300;
 	color: #ffffff;
 }
+#about_title_text 
+{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    color: #ffffff;
+}
 #subtitle_text
 {
     margin-top: -125px;
@@ -25,7 +32,24 @@ a
     font-weight: 200;
     color: #ffffff;
 }
-
+#person_text
+{
+    margin-top: -30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color: #ffffff;
+}
+#about_us_text
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px; right: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color: #ffffff;
+}
 .login_menu
 {
     background: rgb(246, 113, 44);
@@ -39,6 +63,90 @@ a
 	text-align: center;
 	color: #ffffff;
 	border: none;
+}
+.about_nick
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 0;right: 900;
+    top: 170px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.about_mark
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 0;right: 0;
+    top: 170px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.about_richard
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 900;right: 0;
+    top: 170px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.about_rishab
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 0;right: 900;
+    top: 470px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.about_russel
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 0;right: 0;
+    top: 470px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+.about_quicheng
+{
+    background: rgb(246, 113, 44);
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    padding-top: 50px;
+    left: 900;right: 0;
+    top: 470px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    border: none;
 }
 .register_menu
 {
@@ -231,4 +339,9 @@ input[type=radio]
     width: 800px;
     height: 400px;
     background: #ffffff;
+}
+a
+{
+    color: #ffffff;
+    text-decoration: none;
 }
