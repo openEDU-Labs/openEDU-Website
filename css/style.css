@@ -24,6 +24,7 @@ table#t01 {
     margin-top: 500px;
     margin-left: 429px;
     background-color: #f1f1c1;
+    padding-bottom: 0px;
 }
 table#t01 tr:nth-child(even) {
     background-color: #eee;
