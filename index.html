@@ -1,25 +1,106 @@
 <html>
 <head>
-	<title>OpenEDU</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <title>OpenEDU</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <style> html, body { background: #545454; } </style>
+    <script src="https://apis.google.com/js/platform.js?onload=renderGoogleLogin" async defer></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <meta name="google-signin-client_id" content="232568713563-vfishe76fgfsluujq7g00n9uf40ptk98.apps.googleusercontent.com">
+    <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' +googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderGoogleLogin(){
+        gapi.signin2.render('google-signin', {
+          'width': 250,
+          'height': 50,
+          'longtitle': false,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+
+        $(".abcRioButton").css("margin", "0 auto");
+      }
+    </script>
 </head>
 <body>
-	
-	<p id="title_text">OpenEDU</p>
+    <div id="fb-root"></div>
+    <script>
+    function statusChangeCallback(response) {
+      console.log('statusChangeCallback');
+      console.log(response);
+      if (response.status === 'connected') {
+        // Logged into your app and Facebook.
+        testAPI();
+      } else if (response.status === 'not_authorized') {
+        // The person is logged into Facebook, but not your app.
+        document.getElementById('status').innerHTML = 'Please log ' +
+          'into this app.';
+      } else {
+        // The person is not logged into Facebook, so we're not sure if
+        // they are logged into this app or not.
+        document.getElementById('status').innerHTML = 'Please log ' +
+          'into Facebook.';
+      }
+    }
+    
+    function checkLoginState() {
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    }
+    
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1648607478710707',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.5'
+      });
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+    function testAPI() {
+      console.log('Welcome!  Fetching your information.... ');
+      FB.api('/me', function(response) {
+        console.log('Successful login for: ' + response.name);
+        document.getElementById('status').innerHTML =
+          'Thanks for logging in, ' + response.name + '!';
+      });
+    }
+    </script>
+    <p id="title_text">OpenEDU</p>
     <p id="subtitle_text">A simpler, smarter approach to online learning.</p>
-	
-	<div class="login_menu">
-		<form>
-			<input class="login_input" name="username" type="text" placeholder="Username">
-			<input class="login_input" name="user_pass" type="text" placeholder="Password">
-			<input class="login_button" name="submit" type="submit" value="Log In">
-		</form>
-        <a href="registration.html"><p>Register</p></a>
-	</div>
-
-	<a href="about_us.html"><p id="about_us_text">About Us</p></a>
-
+    <div class="login_menu">
+      <div id="google-signin"></div>
+      <div style="padding:1em"></div>&nbsp;&nbsp;
+      <div class="fb-login-button" data-size="xlarge" scope="public_profile" onlogin="checkLoginState();">
+      </div>
+      <div id="status">
+      </div>
+    <a href="registration.html"><p>Register</p></a>
+      </div>
+    <a href="about_us.html"><p id="about_us_text">About Us</p></a>
+    <script>
+      $(window).load(function(){
+        
+        $(".abcRioButton").css("margin", "0 auto");
+      });
+    </script>
 </body>
 </html>

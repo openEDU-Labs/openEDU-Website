@@ -1,0 +1,12 @@
+{
+  "name": "openEDU-Website",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openEDU-Labs/videojs-openEDU.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-serve": "^0.1.6"
+  }
+}
