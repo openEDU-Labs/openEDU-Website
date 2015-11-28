@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>OpenEDU - Teacher Client</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <style> html, body { background: #545454; } </style>
+</head>
+<body>
+    <a class="video_return_button" href="student_videos.html">Videos</a>
+    <p class="video_title">Introduction to Limits</p>
+      <video 
+        id="video" 
+        class="video_box video-js vjs-default-skin"  
+        controls
+        data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=riXcZT2ICjA"}] }'>
+        <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
+      </video>
+      <div class="breakpoint_menu">
+      	<p class="breakpoint_title">Add Breakpoint</p>
+      	<form>
+      		<input class="breakpoint_time" name="breakpoint_time" type="text" placeholder="-- : --">
+      		<input class="breakpoint_question" name="breakpoint_question" type="text" placeholder="Question">
+      		<br>
+      		<input class="breakpoint_answer" name="breakpoint_answer_1" type="text" placeholder="First Answer">
+      		<input class="breakpoint_answer" name="breakpoint_answer_2" type="text" placeholder="Second Answer">
+			<input class="breakpoint_answer" name="breakpoint_answer_3" type="text" placeholder="Third Answer">
+			<input class="breakpoint_answer" name="breakpoint_answer_4" type="text" placeholder="Fourth Answer">
+
+			<div class="correct_answer_container">
+				<p class="correct_answer_label">Correct Answer</p>
+      			<input type="radio" class="breakpoint_rad_button" name="correct_answer" value="answer1" id="teacher_rad">
+				<input type="radio" class="breakpoint_rad_button" name="correct_answer" value="answer2" id="teacher_rad">
+      			<input type="radio" class="breakpoint_rad_button" name="correct_answer" value="answer3" id="teacher_rad">
+      			<input type="radio" class="breakpoint_rad_button" name="correct_answer" value="answer4" id="teacher_rad">
+      		</div>
+
+      		<input class="breakpoint_add_button" type="submit" name="breakpoint_add" value="Add">
+      	</form>
+      </div>
+
+</body>
+</html>

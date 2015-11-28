@@ -1,3 +1,4 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <html>
 <head>
 	<title>OpenEDU - Register</title>
@@ -16,14 +17,15 @@
 			<input class="login_input" name="user_pass" type="text" placeholder="Password">
 			<input class="login_input" name="user_pass_confirmation" type="text" placeholder="Confirm Password">
 
-            <input type="radio" name="tors" id="student_rad">
+            <input type="radio" name="reg_type" value="teacher" id="student_rad">
             <label for="student_rad" class="rad_button">Student</label><br>
-            <input type="radio" name="tors" id="teacher_rad">
+            <input type="radio" name="reg_type" value="teacher" id="teacher_rad">
             <label for="teacher_rad" class="rad_button">Teacher</label>
             
             <input class="login_button" name="submit" type="submit" value="Submit">
 		</form>
 	</div>
+	<div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 </body>
 </html>
