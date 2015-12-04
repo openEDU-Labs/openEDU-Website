@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video.js Open Edu</title>
+  <link href="../bower_components/videojs/dist/video-js.css" rel="stylesheet">
+  <link href="../lib/videojs-openEDU.css" rel="stylesheet">
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .info {
+      background-color: #eee;
+      border: thin solid #333;
+      border-radius: 3px;
+      padding: 0 5px;
+      text-align: center;
+    }
+    .video-js {
+      margin: 40px auto;
+    }
+    
+  </style>
+  
+
+</head>
+<body>
+  <div class="info">
+    <p>
+      You can see the Video.js Open Edu plugin in action below.
+      Look at the source of this page to see how to use it with your videos.
+    </p>
+  </div>
+  <div data-ng-app="openEDU" data-ng-controller="videoDisplay">
+      <video id="video" height="400px" class="video_box video-js vjs-default-skin"  controls data-setup='{{datasetup}}'>
+        <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
+      </video>
+  </div>
+  <script src="../bower_components/videojs/dist/video.js"></script>
+  <script src="../bower_components/videojs-youtube/dist/Youtube.js"></script>
+  <script src="../lib/videojs-openEDU.js"></script>
+  <script src="../lib/openEDUController.js"></script>
+</body>
+</html>

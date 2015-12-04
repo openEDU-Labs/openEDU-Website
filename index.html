@@ -16,7 +16,7 @@
       }
       function renderGoogleLogin(){
         gapi.signin2.render('google-signin', {
-          'width': 250,
+          'width': 300,
           'height': 50,
           'longtitle': false,
           'theme': 'dark',
@@ -29,76 +29,16 @@
     </script>
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script>
-    function statusChangeCallback(response) {
-      console.log('statusChangeCallback');
-      console.log(response);
-      if (response.status === 'connected') {
-        // Logged into your app and Facebook.
-        testAPI();
-      } else if (response.status === 'not_authorized') {
-        // The person is logged into Facebook, but not your app.
-        document.getElementById('status').innerHTML = 'Please log ' +
-          'into this app.';
-      } else {
-        // The person is not logged into Facebook, so we're not sure if
-        // they are logged into this app or not.
-        document.getElementById('status').innerHTML = 'Please log ' +
-          'into Facebook.';
-      }
-    }
-    
-    function checkLoginState() {
-      FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
-      });
-    }
-    
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1648607478710707',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v2.5'
-      });
-      FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    
-    function testAPI() {
-      console.log('Welcome!  Fetching your information.... ');
-      FB.api('/me', function(response) {
-        console.log('Successful login for: ' + response.name);
-        document.getElementById('status').innerHTML =
-          'Thanks for logging in, ' + response.name + '!';
-      });
-    }
-    </script>
     <p id="title_text">OpenEDU</p>
     <p id="subtitle_text">A simpler, smarter approach to online learning.</p>
     <div class="login_menu">
       <div id="google-signin"></div>
       <div style="padding:1em"></div>&nbsp;&nbsp;
-      <div class="fb-login-button" data-size="xlarge" scope="public_profile" onlogin="checkLoginState();">
-      </div>
-      <div id="status">
-      </div>
     <a href="registration.html"><p>Register</p></a>
       </div>
     <a href="about_us.html"><p id="about_us_text">About Us</p></a>
     <script>
       $(window).load(function(){
-        
         $(".abcRioButton").css("margin", "0 auto");
       });
     </script>

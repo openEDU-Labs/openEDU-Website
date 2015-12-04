@@ -11,15 +11,32 @@
 </head>
     
 <body>
-    <a class="video_return_button" href="student_videos.html">Videos</a>
-    <p class="video_title">Periodic Table</p>
-    <div class="video_box">
-      <video id="video" class="video-js vjs-default-skin"  controls
-             poster="http://video-js.zencoder.com/oceans-clip.png">
+    <div>
+      <a class="video_return_button" href="student_videos.html">Videos</a>
+    </div>
+    <div class="create_video_box">
+      <input id="input-title" size="25" maxlength="25" value="Example Title" class="create_video_title"></input>
+      <video 
+        id="video" 
+        class="video_box video-js vjs-default-skin"  
+        controls
+        data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=riXcZT2ICjA"}] }'
+      >
         <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
-        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
       </video>
+
+      </div>
+    <div class="create_box">
+      <button> create breakpoint</button>
+    </div>
+    <div class="create_box">
+      <p>hello</p>
+    </div>
+    <div class="create_box">
+      <p>hello</p>
+    </div>
+    <div class="create_box">
+      <p>hello</p>
     </div>
   <script src="bower_components/videojs-openedu/dist/videojs-openEDU.js"></script>
   <script>
