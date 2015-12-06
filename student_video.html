@@ -12,14 +12,16 @@
 <body>
     <a class="video_return_button" href="student_videos.html">Videos</a>
     <p class="video_title">Introduction to Limits</p>
-      <video 
-        id="video" 
-        class="video_box video-js vjs-default-skin"  
-        controls
-        data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=riXcZT2ICjA"}] }'
-      >
-        <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
-      </video>
+      <div id="videoBox">
+        <video 
+          id="video" 
+          class="video_box video-js vjs-default-skin"  
+          controls
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=riXcZT2ICjA"}] }'
+        >
+          <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
+        </video>
+      </div>
     </div>
   
   <script src='bower_components/videojs/dist/video.min.js'></script> 

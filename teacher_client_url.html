@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>OpenEDU - Teacher Client</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="getUrlController.js"></script>
+    <style> html, body { background: #545454; } </style>
+</head>
+<body>
+    <div data-ng-app="teacherClient" data-ng-controller="teacherClientController" data-ng-init="url='https://www.youtube.com/watch?v=riXcZT2ICjA'"> 
+      <a class="video_return_button" href="student_videos.html">Videos</a>
+        <form name="videoURL" data-ng-submit="onSubmit()">
+          <input name="video_url" type="url" data-ng-model="url">
+            <span style="color:red" data-ng-show="videoURL.video_url.$invalid && videoURL.video_url.$dirty">
+              <span data-ng-show="videoURL.video_url.$error.required">URL is required</span>
+              <span data-ng-show="videoURL.video_url.$error.url">URL is invalid</span>
+            </span>
+            <input type="submit" data-ng-disabled="videoURL.video_url.$invalid">
+        </form>
+    </div>
+
+</body>
+</html>
+
