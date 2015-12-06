@@ -293,6 +293,22 @@ input[type=radio]
     height: 400px;
     background: #ffffff;
 }
+.breakpoint_button
+{
+    background: rgb(246, 113, 44);
+    border: none;
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 100px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 300;
+    cursor: pointer;
+}
 .breakpoint_menu
 {
     background: rgb(246, 113, 44);

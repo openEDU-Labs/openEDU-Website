@@ -25,10 +25,11 @@
               <p>Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the example.</p>
           </video>
           </div>
-          <div class="breakpoint_menu">
+          <button type="button" class="breakpoint_button" data-ng-click="creatBreakpoint()" data-ng-show="!creatingBreakpoint">Create Breakpoint</button>
+          <div class="breakpoint_menu" data-ng-show="creatingBreakpoint">
               <p class="breakpoint_title" data-ng-show="creatingBreakpoint">Add Breakpoint</p>
               <form novalidate>
-                  <button type="button" class="breakpoint_title" data-ng-click="creatBreakpoint()" data-ng-show="!creatingBreakpoint">Create Breakpoint</button>
+                 
                   <div data-ng-show="creatingBreakpoint">
                       <input class="breakpoint_time" name="breakpoint_time" type="text" data-ng-model="breakpoint_time">
                       <input class="breakpoint_question" name="breakpoint_question" type="text" data-ng-model="breakpoint_question" placeholder="Question">
@@ -39,7 +40,7 @@
                           <input class="breakpoint_answer" name="breakpoint_answer_4" type="text" data-ng-model="breakpoint_answer_4" placeholder="Fourth Answer">
 
                           <div class="correct_answer_container">
-                                  <p class="correct_answer_label">Correct Answer</p>
+                          <p class="correct_answer_label">Correct Answer</p>
                           <input type="radio" class="breakpoint_rad_button" name="correct_answer" data-ng-model="radio" value="1" id="teacher_rad">
                           <input type="radio" class="breakpoint_rad_button" name="correct_answer" data-ng-model="radio" value="2" id="teacher_rad">
                           <input type="radio" class="breakpoint_rad_button" name="correct_answer" data-ng-model="radio" value="3" id="teacher_rad">
@@ -47,10 +48,10 @@
                           </div>
                       <br>
                       <br>
-                      <br><!-- sorry -->
                       <br>
                       <br>
-                      <input class="breakpoint_add_button" type="submit" data-ng-click="cancleBreakpoint()" name="breakpoint_cancle" value="Cancle">
+                      <br>
+                      <input class="breakpoint_add_button" type="submit" data-ng-click="cancleBreakpoint()" name="breakpoint_cancle" value="Cancel">
                       <input class="breakpoint_add_button" type="submit" data-ng-click="addBreakpoint()" value="Add">
                   </div>
               </form>
